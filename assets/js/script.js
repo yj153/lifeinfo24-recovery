@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded',function(){var buttons=document.querySelectorAll('a.cta-btn');buttons.forEach(function(btn){btn.addEventListener('click',function(){btn.setAttribute('aria-busy','true');});});});
+// reserved for future tracking or UI behavior

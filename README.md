@@ -1,5 +1,7 @@
-# lifeinfo24
+# lifeinfo24 nrecovery update
 
-GitHub Pages static site for recovery landing bridge.
+네이버용 개인회생·개인파산 상담 안내 페이지입니다.
 
-Ad URL: https://lifeinfo24.kr/recovery/
+- 광고 URL: https://lifeinfo24.kr/nrecovery/
+- CTA 내부 경로: /nrecovery/apply/
+- 최종 추적 URL: https://www.albarich.com/pt/NRHzUu8pPw
