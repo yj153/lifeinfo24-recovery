@@ -1,5 +1,4 @@
-# lifeinfo24 nrecovery
+# lifeinfo24 kakao recovery update
 
-네이버용 개인회생·개인파산 상담 안내 페이지입니다.
-
-광고 연결 URL: https://lifeinfo24.kr/nrecovery/
+카카오용 페이지: /krecovery/
+버튼 이동: /krecovery/apply/ -> https://www.albarich.com/pt/Uvt2fKOats
