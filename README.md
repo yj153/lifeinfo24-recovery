@@ -1,11 +1,27 @@
-# nhubmildang 네이버용
+# nhubrecovery GitHub 업로드용
 
-기존 nmildang 정상본에서 아래만 교체한 버전입니다.
+## URL
+https://lifeinfo24.kr/nhubrecovery/
 
-- 경로: /nhubmildang/
-- 상담링크: https://zodlddhl.adpt.kr
-- 하단 사업자: (주)허브153 | 대표자: 최윤재 | 사업자등록번호: 744-86-01480
-- 주소: 서울특별시 강남구 도곡로112, 2층B2-4호
-- 이메일: mil7bil@gmail.com
+## 상담링크
+https://www.albarich.com/pt/wtjfeCT1MN
 
-업로드는 nhubmildang/ 폴더만 기존 저장소에 추가하면 됩니다.
+## 구조
+index.html
+nhubrecovery/
+privacy/
+terms/
+
+## 로컬 확인 방법
+압축을 풀고 `nhubrecovery/index.html`을 크롬에서 열면 됩니다.
+개인정보처리방침: `privacy/index.html`
+이용안내: `terms/index.html`
+
+## 업로드 방법
+기존 GitHub 저장소 루트에 아래 4개를 올리세요.
+- index.html
+- nhubrecovery/
+- privacy/
+- terms/
+
+기존 index.html/privacy/terms를 덮어쓰기 싫으면 `nhubrecovery/`만 올려도 페이지 자체는 열리지만, 하단 개인정보/이용안내 링크까지 확인하려면 privacy/terms도 같이 올리는 것을 권장합니다.
