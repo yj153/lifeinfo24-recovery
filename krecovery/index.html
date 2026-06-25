@@ -280,11 +280,517 @@ body{
     font-size:21px !important;
   }
 }
+
+
+/* Bigger image display + 3 CTA layout */
+body{
+  font-size:18px !important;
+}
+.img-sec img{
+  max-width:1280px !important;
+}
+.cta-band{
+  padding:30px 16px 34px !important;
+}
+.big-cta{
+  width:min(820px,96%) !important;
+  min-height:108px !important;
+  padding:18px 24px !important;
+}
+.cta-sub{
+  font-size:28px !important;
+  line-height:1.12 !important;
+}
+.cta-main{
+  font-size:42px !important;
+  line-height:1.08 !important;
+}
+.footer{
+  font-size:17px !important;
+  line-height:1.85 !important;
+}
+.footer-inner{
+  max-width:1280px !important;
+}
+@media(min-width:1180px){
+  .sticky-cta{
+    width:370px !important;
+    right:32px !important;
+  }
+  .sticky-cta a{
+    width:370px !important;
+    min-height:190px !important;
+  }
+  .sticky-cta .cta-sub{
+    font-size:23px !important;
+  }
+  .sticky-cta .cta-main{
+    font-size:35px !important;
+  }
+}
+@media(max-width:1000px){
+  .img-sec{
+    overflow:hidden !important;
+    background:#fff !important;
+  }
+  .img-sec img{
+    width:118% !important;
+    max-width:none !important;
+    margin-left:-9% !important;
+  }
+}
+@media(max-width:720px){
+  body{
+    font-size:17px !important;
+  }
+  .cta-band{
+    padding:22px 10px 26px !important;
+  }
+  .big-cta{
+    width:96% !important;
+    min-height:94px !important;
+    padding:14px 12px !important;
+  }
+  .cta-sub{
+    font-size:21px !important;
+  }
+  .cta-main{
+    font-size:31px !important;
+  }
+  .sticky-cta .cta-sub{
+    font-size:18px !important;
+  }
+  .sticky-cta .cta-main{
+    font-size:25px !important;
+  }
+  .footer{
+    font-size:15.5px !important;
+  }
+}
+@media(max-width:430px){
+  .img-sec img{
+    width:126% !important;
+    margin-left:-13% !important;
+  }
+}
+
+
+/* Aggressive readability zoom: image text is baked into the image */
+.img-sec{
+  background:#fff !important;
+}
+.img-sec img{
+  width:100% !important;
+  max-width:1600px !important;
+  height:auto !important;
+  margin:0 auto !important;
+}
+@media(min-width:1180px){
+  .img-sec img{
+    max-width:1600px !important;
+  }
+  .site{
+    background:#fff !important;
+  }
+}
+@media(min-width:1601px){
+  .img-sec img{
+    max-width:1700px !important;
+  }
+}
+@media(max-width:1179px){
+  .img-sec{
+    overflow:hidden !important;
+    background:#fff !important;
+  }
+  .img-sec img{
+    max-width:none !important;
+    width:150% !important;
+    margin-left:-25% !important;
+  }
+  /* Text-heavy left sections: move slightly left so left body copy is visible */
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:165% !important;
+    margin-left:-32.5% !important;
+  }
+  /* Middle/visual sections */
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:150% !important;
+    margin-left:-25% !important;
+  }
+}
+@media(max-width:720px){
+  .img-sec img{
+    width:165% !important;
+    margin-left:-32.5% !important;
+  }
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:180% !important;
+    margin-left:-40% !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:165% !important;
+    margin-left:-32.5% !important;
+  }
+  .cta-band{
+    padding:22px 8px 26px !important;
+  }
+  .big-cta{
+    width:98% !important;
+    min-height:98px !important;
+  }
+  .cta-sub{
+    font-size:21px !important;
+  }
+  .cta-main{
+    font-size:32px !important;
+  }
+}
+@media(max-width:430px){
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:195% !important;
+    margin-left:-47.5% !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:175% !important;
+    margin-left:-37.5% !important;
+  }
+}
+/* CTA count is fixed to 3 inline buttons; sticky CTA remains */
+
+
+/* EXTREME ZOOM FINAL: image text is baked into image, so enlarge the image itself */
+html,body{
+  background:#fff !important;
+  overflow-x:hidden !important;
+}
+.site{
+  width:100vw !important;
+  max-width:100vw !important;
+  background:#fff !important;
+  overflow-x:hidden !important;
+}
+.img-sec{
+  width:100vw !important;
+  max-width:100vw !important;
+  overflow:hidden !important;
+  background:#fff !important;
+  text-align:center !important;
+  line-height:0 !important;
+}
+.img-sec img{
+  display:block !important;
+  height:auto !important;
+  max-width:none !important;
+  width:155vw !important;
+  margin-left:-27.5vw !important;
+  margin-right:0 !important;
+}
+/* Text-heavy sections get even larger. Side crop is intentional for readability. */
+.sec-bg-1 img,
+.sec-bg-3 img,
+.sec-bg-5 img,
+.sec-bg-6 img,
+.sec-bg-7 img,
+.sec-bg-8 img{
+  width:170vw !important;
+  margin-left:-35vw !important;
+}
+.sec-bg-2 img,
+.sec-bg-4 img,
+.sec-bg-9 img{
+  width:155vw !important;
+  margin-left:-27.5vw !important;
+}
+/* CTA: keep 3 inline buttons only, make readable */
+.cta-band{
+  padding:36px 10px 40px !important;
+}
+.big-cta{
+  width:min(920px,97vw) !important;
+  min-height:120px !important;
+  padding:20px 20px !important;
+  border-radius:999px !important;
+}
+.cta-sub{
+  font-size:31px !important;
+  line-height:1.12 !important;
+}
+.cta-main{
+  font-size:47px !important;
+  line-height:1.08 !important;
+}
+.footer{
+  font-size:18px !important;
+  line-height:1.9 !important;
+}
+.footer-inner{
+  max-width:1200px !important;
+  padding:32px 34px 36px !important;
+}
+.footer-links a{
+  font-size:18px !important;
+  font-weight:800 !important;
+}
+@media(min-width:1180px){
+  .sticky-cta{
+    width:400px !important;
+    right:18px !important;
+    top:50% !important;
+  }
+  .sticky-cta a{
+    width:400px !important;
+    min-height:204px !important;
+    padding:24px 16px !important;
+  }
+  .sticky-cta .cta-sub{
+    font-size:25px !important;
+  }
+  .sticky-cta .cta-main{
+    font-size:38px !important;
+  }
+}
+/* Tablet/mobile: much stronger crop so image text is larger than original mobile */
+@media(max-width:1179px){
+  .img-sec img{
+    width:235vw !important;
+    margin-left:-67.5vw !important;
+  }
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:260vw !important;
+    margin-left:-80vw !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:230vw !important;
+    margin-left:-65vw !important;
+  }
+}
+@media(max-width:720px){
+  .img-sec img{
+    width:260vw !important;
+    margin-left:-80vw !important;
+  }
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:290vw !important;
+    margin-left:-95vw !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:255vw !important;
+    margin-left:-77.5vw !important;
+  }
+  .big-cta{
+    width:98vw !important;
+    min-height:108px !important;
+    border-radius:26px !important;
+  }
+  .cta-sub{
+    font-size:22px !important;
+  }
+  .cta-main{
+    font-size:35px !important;
+  }
+  .sticky-cta .cta-sub{
+    font-size:18px !important;
+  }
+  .sticky-cta .cta-main{
+    font-size:27px !important;
+  }
+  .footer{
+    font-size:16px !important;
+  }
+  .footer-links a{
+    font-size:16px !important;
+  }
+}
+@media(max-width:430px){
+  .img-sec img{
+    width:285vw !important;
+    margin-left:-92.5vw !important;
+  }
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:320vw !important;
+    margin-left:-110vw !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:280vw !important;
+    margin-left:-90vw !important;
+  }
+}
+
+
+/* BALANCED ZOOM: reduce side crop while keeping text larger */
+.img-sec{
+  width:100vw !important;
+  max-width:100vw !important;
+  overflow:hidden !important;
+  background:#fff !important;
+}
+.img-sec img{
+  display:block !important;
+  height:auto !important;
+  max-width:none !important;
+  width:118vw !important;
+  margin-left:-9vw !important;
+  margin-right:0 !important;
+}
+/* Slightly larger for text-heavy sections but not extreme crop */
+.sec-bg-1 img,
+.sec-bg-3 img,
+.sec-bg-5 img,
+.sec-bg-6 img,
+.sec-bg-7 img,
+.sec-bg-8 img{
+  width:128vw !important;
+  margin-left:-14vw !important;
+}
+.sec-bg-2 img,
+.sec-bg-4 img,
+.sec-bg-9 img{
+  width:118vw !important;
+  margin-left:-9vw !important;
+}
+@media(min-width:1180px){
+  .img-sec img{
+    width:118vw !important;
+    margin-left:-9vw !important;
+  }
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:126vw !important;
+    margin-left:-13vw !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:116vw !important;
+    margin-left:-8vw !important;
+  }
+}
+@media(max-width:1179px){
+  .img-sec img{
+    width:145vw !important;
+    margin-left:-22.5vw !important;
+  }
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:160vw !important;
+    margin-left:-30vw !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:145vw !important;
+    margin-left:-22.5vw !important;
+  }
+}
+@media(max-width:720px){
+  .img-sec img{
+    width:155vw !important;
+    margin-left:-27.5vw !important;
+  }
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:172vw !important;
+    margin-left:-36vw !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:155vw !important;
+    margin-left:-27.5vw !important;
+  }
+}
+@media(max-width:430px){
+  .img-sec img{
+    width:165vw !important;
+    margin-left:-32.5vw !important;
+  }
+  .sec-bg-1 img,
+  .sec-bg-3 img,
+  .sec-bg-5 img,
+  .sec-bg-6 img,
+  .sec-bg-7 img,
+  .sec-bg-8 img{
+    width:182vw !important;
+    margin-left:-41vw !important;
+  }
+  .sec-bg-2 img,
+  .sec-bg-4 img,
+  .sec-bg-9 img{
+    width:165vw !important;
+    margin-left:-32.5vw !important;
+  }
+}
 </style>
 </head>
 <body>
   <main class="site">
-    <section class="img-sec sec-bg-1"><img src="https://www.albarich.com/intro/law_seoyul/img/img_01.jpg" alt="법무법인 서앤율 로고" loading="eager"></section><section class="img-sec sec-bg-2"><img src="https://www.albarich.com/intro/law_seoyul/img/img_02.jpg" alt="법무법인 서앤율 회생 파산 상담 안내" loading="eager"></section><section class="img-sec sec-bg-3"><img src="https://www.albarich.com/intro/law_seoyul/img/img_03.jpg" alt="회생 파산 가능 사례 안내" loading="lazy"></section><section class="cta-band"><a class="big-cta" href="./apply/"><span class="cta-sub">개인회생 · 개인파산 가능성 확인</span><span class="cta-main">법률상담 신청 <span>( CLICK )</span> 〉</span></a></section><section class="img-sec sec-bg-4"><img src="https://www.albarich.com/intro/law_seoyul/img/m_img_04.jpg" alt="상담신청하기 안내" loading="lazy"></section><section class="cta-band"><a class="big-cta" href="./apply/"><span class="cta-sub">개인회생 · 개인파산 가능성 확인</span><span class="cta-main">법률상담 신청 <span>( CLICK )</span> 〉</span></a></section><section class="img-sec sec-bg-5"><img src="https://www.albarich.com/intro/law_seoyul/img/img_05.jpg" alt="개인회생 자격 안내" loading="lazy"></section><section class="img-sec sec-bg-6"><img src="https://www.albarich.com/intro/law_seoyul/img/img_06.jpg" alt="개인회생 대상 안내" loading="lazy"></section><section class="cta-band"><a class="big-cta" href="./apply/"><span class="cta-sub">개인회생 · 개인파산 가능성 확인</span><span class="cta-main">법률상담 신청 <span>( CLICK )</span> 〉</span></a></section><section class="img-sec sec-bg-7"><img src="https://www.albarich.com/intro/law_seoyul/img/img_07.jpg" alt="개인파산 자격 안내" loading="lazy"></section><section class="img-sec sec-bg-8"><img src="https://www.albarich.com/intro/law_seoyul/img/img_08.jpg" alt="개인파산 대상 안내" loading="lazy"></section><section class="cta-band"><a class="big-cta" href="./apply/"><span class="cta-sub">개인회생 · 개인파산 가능성 확인</span><span class="cta-main">법률상담 신청 <span>( CLICK )</span> 〉</span></a></section><section class="img-sec sec-bg-9"><img src="https://www.albarich.com/intro/law_seoyul/img/img_12.jpg" alt="서앤율 선택 이유" loading="lazy"></section><section class="cta-band final-cta"><a class="big-cta" href="./apply/"><span class="cta-sub">개인회생 · 개인파산 가능성 확인</span><span class="cta-main">법률상담 신청 <span>( CLICK )</span> 〉</span></a></section>
+    <section class="img-sec sec-bg-1"><img src="https://www.albarich.com/intro/law_seoyul/img/img_01.jpg" alt="법무법인 서앤율 상담 안내" loading="eager"></section>
+    <section class="img-sec sec-bg-2"><img src="https://www.albarich.com/intro/law_seoyul/img/img_02.jpg" alt="개인회생 개인파산 상담 안내" loading="eager"></section>
+    <section class="cta-band cta-2"><a class="big-cta" href="./apply/"><span class="cta-sub">개인회생 · 개인파산 가능성 확인</span><span class="cta-main">법률상담 신청 <span>( CLICK )</span> 〉</span></a></section>
+    <section class="img-sec sec-bg-3"><img src="https://www.albarich.com/intro/law_seoyul/img/img_03.jpg" alt="채무조정 가능성 안내" loading="lazy"></section>
+    <section class="img-sec sec-bg-4"><img src="https://www.albarich.com/intro/law_seoyul/img/m_img_04.jpg" alt="법률상담 신청 안내" loading="lazy"></section>
+    <section class="img-sec sec-bg-5"><img src="https://www.albarich.com/intro/law_seoyul/img/img_05.jpg" alt="개인회생 자격 안내" loading="lazy"></section>
+    <section class="cta-band cta-5"><a class="big-cta" href="./apply/"><span class="cta-sub">개인회생 · 개인파산 가능성 확인</span><span class="cta-main">법률상담 신청 <span>( CLICK )</span> 〉</span></a></section>
+    <section class="img-sec sec-bg-6"><img src="https://www.albarich.com/intro/law_seoyul/img/img_06.jpg" alt="개인회생 대상 안내" loading="lazy"></section>
+    <section class="img-sec sec-bg-7"><img src="https://www.albarich.com/intro/law_seoyul/img/img_07.jpg" alt="개인파산 자격 안내" loading="lazy"></section>
+    <section class="img-sec sec-bg-8"><img src="https://www.albarich.com/intro/law_seoyul/img/img_08.jpg" alt="개인파산 대상 안내" loading="lazy"></section>
+    <section class="cta-band cta-8"><a class="big-cta" href="./apply/"><span class="cta-sub">개인회생 · 개인파산 가능성 확인</span><span class="cta-main">법률상담 신청 <span>( CLICK )</span> 〉</span></a></section>
+    <section class="img-sec sec-bg-9"><img src="https://www.albarich.com/intro/law_seoyul/img/img_12.jpg" alt="법무법인 서앤율 안내" loading="lazy"></section>
     <footer class="footer">
       <div class="footer-inner">
         <p><strong>상호명 : 법무법인 서앤율</strong></p>
