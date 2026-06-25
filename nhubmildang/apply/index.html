@@ -3,19 +3,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>상담신청 페이지로 이동 중</title>
-  <meta http-equiv="refresh" content="0; url=https://zodlddhl.adpt.kr/">
+  <title>밀당PT 무료 상담 신청</title>
   <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;margin:0;display:grid;place-items:center;min-height:100vh;background:#fff;color:#222}
-    .box{max-width:520px;margin:20px;padding:32px;background:#fff;border-radius:20px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.08)}
-    a{display:inline-flex;margin-top:18px;background:#ff5b00;color:white;text-decoration:none;font-weight:900;border-radius:999px;padding:16px 26px}
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif;
+      background:#fff7ef;
+      color:#151515;
+    }
+    .wrap{
+      max-width:860px;
+      margin:0 auto;
+      min-height:100vh;
+      padding:28px 16px 44px;
+    }
+    .head{text-align:center;margin-bottom:18px}
+    .badge{
+      display:inline-block;
+      background:#ff6b16;
+      color:#fff;
+      border-radius:999px;
+      padding:7px 14px;
+      font-size:14px;
+      font-weight:900;
+      margin-bottom:10px;
+    }
+    h1{
+      margin:0 0 8px;
+      font-size:32px;
+      letter-spacing:-.06em;
+      line-height:1.22;
+    }
+    .sub{
+      margin:0;
+      color:#6a5142;
+      font-weight:700;
+      line-height:1.55;
+    }
+    .form-card{
+      background:#fff;
+      border:2px solid #ff7a00;
+      border-radius:18px;
+      padding:22px;
+      box-shadow:0 18px 42px rgba(255,106,0,.14);
+    }
+    iframe{
+      display:block;
+      width:100%;
+      min-height:356px;
+      border:0;
+    }
+    .notice{
+      margin:14px 0 0;
+      font-size:12px;
+      color:#777;
+      line-height:1.55;
+      text-align:center;
+    }
+    .back{
+      display:block;
+      width:max-content;
+      max-width:100%;
+      margin:18px auto 0;
+      color:#333;
+      text-decoration:underline;
+      text-underline-offset:3px;
+      font-size:13px;
+    }
+    @media(max-width:720px){
+      .wrap{padding:20px 12px 34px}
+      h1{font-size:25px}
+      .form-card{padding:14px;border-radius:14px}
+      iframe{min-height:430px}
+    }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>상담신청 페이지로 이동 중입니다</h1>
-    <p>자동으로 이동하지 않으면 아래 버튼을 눌러주세요.</p>
-    <a href="https://zodlddhl.adpt.kr/">계속 진행하기</a>
-  </div>
+  <main class="wrap">
+    <div class="head">
+      <div class="badge">특별혜택 10만원 + 안심환불 일주일</div>
+      <h1>밀당PT 무료 상담 신청</h1>
+      <p class="sub">아래 입력폼 작성 후 상담 신청을 완료해주세요.</p>
+    </div>
+    <section class="form-card">
+      <iframe src="https://potly.kr/js/form/iframe.php?width=800&cid=O6gRBaYqay&sid=O6gR&form=my2form125&ver=1&c1=0&c2=0&c3=0&c4=0&btn=&autoHeight=356" width="100%" height="356px" frameborder="0"></iframe>
+    </section>
+    <p class="notice">입력폼 제출 및 상담 안내는 해당 신청폼 기준에 따라 진행됩니다.</p>
+    <a class="back" href="../">상담 안내 페이지로 돌아가기</a>
+  </main>
 </body>
 </html>

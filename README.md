@@ -128,3 +128,11 @@ PC에서는 .site padding-bottom을 0으로 만들고, site/html/body 배경을 
 옆 배경의 이미지 블러/반투명 오버레이를 전부 제거했습니다.
 PC 옆 배경은 섹션별 단색 톤으로만 처리했습니다.
 PC 우측 CTA는 오른쪽 끝에 붙지 않게 유지합니다.
+
+
+## apply 입력폼 적용
+상담신청 버튼 클릭 시 /nhubmildang/apply/에서 바로 입력폼 iframe이 표시됩니다.
+기존 설명 랜딩으로 자동 이동하지 않습니다.
+
+iframe:
+https://potly.kr/js/form/iframe.php?width=800&cid=O6gRBaYqay&sid=O6gR&form=my2form125&ver=1&c1=0&c2=0&c3=0&c4=0&btn=&autoHeight=356
