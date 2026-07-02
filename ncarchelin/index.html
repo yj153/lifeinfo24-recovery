@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>카슐랭 신차 장기렌트 / 리스 상담신청</title>
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<main class="original-frame-wrap">
+  <iframe class="original-frame" src="https://www.albarich.com/pt/UrSWEHaX3F" title="카슐랭 원본 랜딩페이지"></iframe>
+</main>
+
+<footer class="business-footer">
+  <div class="business-inner">
+    <p><strong>(주)허브153</strong></p>
+    <p>대표자: 최윤재 | 사업자등록번호: 744-86-01480</p>
+    <p>주소: 서울특별시 강남구 도곡로112, 2층B2-4호</p>
+    <p>이메일: mil7bil@gmail.com</p>
+    <p>본 페이지는 상담신청 안내를 위한 광고/정보 제공 페이지입니다.</p>
+    <div class="business-links">
+      <a href="../privacy/">개인정보처리방침</a>
+      <a href="../terms/">이용안내</a>
+    </div>
+  </div>
+</footer>
+
+<div class="bottom-fixed">
+  <a class="btn-main" href="./apply/">상담신청 바로가기</a>
+</div>
+
+<script>
+(function(){
+  function fixMobileGap(){
+    var wrap = document.querySelector('.original-frame-wrap');
+    var frame = document.querySelector('.original-frame');
+    if(!wrap || !frame) return;
+    var w = window.innerWidth || document.documentElement.clientWidth;
+    if(w <= 900){
+      wrap.style.height = (w <= 480 ? '4920px' : '5000px');
+      wrap.style.maxHeight = wrap.style.height;
+      wrap.style.overflow = 'hidden';
+      frame.style.height = '9800px';
+    }
+  }
+  window.addEventListener('load', fixMobileGap);
+  window.addEventListener('resize', fixMobileGap);
+  fixMobileGap();
+})();
+</script>
+
+</body>
+</html>
