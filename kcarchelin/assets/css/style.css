@@ -85,3 +85,27 @@ a{text-decoration:none;color:inherit}
   .business-footer{font-size:12.8px;padding-bottom:150px}
   .logo{font-size:24px}
 }
+
+
+/* FINAL mobile-only crop: PC remains unchanged */
+@media (max-width: 900px) {
+  .original-frame-wrap {
+    height: 5000px !important;
+    max-height: 5000px !important;
+    overflow: hidden !important;
+  }
+  .original-frame {
+    height: 9800px !important;
+  }
+  .business-footer {
+    margin-top: 0 !important;
+    padding-top: 24px !important;
+    padding-bottom: 150px !important;
+  }
+}
+@media (max-width: 480px) {
+  .original-frame-wrap {
+    height: 4920px !important;
+    max-height: 4920px !important;
+  }
+}

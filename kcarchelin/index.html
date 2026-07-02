@@ -27,5 +27,26 @@
 <div class="bottom-fixed">
   <a class="btn-main" href="./apply/">상담신청 바로가기</a>
 </div>
+
+<script>
+(function(){
+  function fixMobileGap(){
+    var wrap = document.querySelector('.original-frame-wrap');
+    var frame = document.querySelector('.original-frame');
+    if(!wrap || !frame) return;
+    var w = window.innerWidth || document.documentElement.clientWidth;
+    if(w <= 900){
+      wrap.style.height = (w <= 480 ? '4920px' : '5000px');
+      wrap.style.maxHeight = wrap.style.height;
+      wrap.style.overflow = 'hidden';
+      frame.style.height = '9800px';
+    }
+  }
+  window.addEventListener('load', fixMobileGap);
+  window.addEventListener('resize', fixMobileGap);
+  fixMobileGap();
+})();
+</script>
+
 </body>
 </html>
