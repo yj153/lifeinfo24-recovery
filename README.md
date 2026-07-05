@@ -21,3 +21,5 @@ https://lifeinfo24.kr/kgooddrain/
 - Csr2O9VrQz 신청 iframe 유지
 
 - 사업자정보 footer 중앙정렬 보정
+
+- footer HTML 인라인 860px 중앙정렬 강제 적용
