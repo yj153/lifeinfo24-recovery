@@ -15,7 +15,7 @@ https://lifeinfo24.kr/kgooddrain/
 
 반영:
 - PC 원본 CSS 유지
-- 모바일 메인 viewport 860 원본폭 적용
+- 모바일 메인 viewport 제거: 원본 착한환경 HTML과 동일
 - 기존 잘못된 사업자정보 이미지 참조 제거
 - 기존 사업자번호/광고전화 문구 제거
 - Csr2O9VrQz 신청 iframe 유지
