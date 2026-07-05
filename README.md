@@ -17,3 +17,5 @@ https://www.albarich.com/pt/wVfRT8GAFk
 - 하단 허브153 정보 적용
 - footer는 원본 .contents 축과 표시 이미지 폭 970px 기준으로 중앙정렬
 - footer 모바일 글씨 15px 적용
+
+- 모바일 viewport를 원본 표시폭 970px 기준으로 최종 보정

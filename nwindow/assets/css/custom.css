@@ -86,3 +86,36 @@
   line-height: 1.75;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
 }
+
+
+/* FINAL mobile fit: KCC original visible content width is 970px */
+html, body {
+  overflow-x: hidden !important;
+}
+.wrap {
+  min-width: 970px !important;
+}
+.custom-footer-shell {
+  position: relative !important;
+  left: 50% !important;
+  margin-left: -960px !important;
+  width: 1920px !important;
+  min-width: 1920px !important;
+  max-width: 1920px !important;
+  text-align: center !important;
+}
+.custom-footer-shell .custom-business-footer {
+  width: 970px !important;
+  min-width: 970px !important;
+  max-width: 970px !important;
+  margin: 0 auto !important;
+}
+@media (max-width: 970px) {
+  .wrap {
+    min-width: 970px !important;
+  }
+  .custom-footer-shell .custom-business-footer p,
+  .custom-footer-shell .custom-business-footer a {
+    font-size: 15px !important;
+  }
+}
