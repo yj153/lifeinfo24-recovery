@@ -20,6 +20,4 @@ https://lifeinfo24.kr/kgooddrain/
 - 기존 사업자번호/광고전화 문구 제거
 - Csr2O9VrQz 신청 iframe 유지
 
-- 사업자정보 footer 중앙정렬 보정
-
-- footer HTML 인라인 860px 중앙정렬 강제 적용
+- footer를 원본 wrap과 같은 min-width 1200px 기준 컨테이너 안에서 중앙정렬

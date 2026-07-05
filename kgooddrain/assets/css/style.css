@@ -144,37 +144,19 @@ body {
 }
 
 
-/* final footer alignment: match original 860px centered landing frame */
-.custom-business-footer {
-  width: 860px !important;
-  max-width: none !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: block !important;
-  box-sizing: border-box !important;
-  text-align: center !important;
+/* final: footer uses same centering basis as original .wrap */
+.custom-footer-shell {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent;
 }
-.custom-business-footer * {
-  box-sizing: border-box !important;
-}
-@media(max-width:900px) {
-  .custom-business-footer {
-    width: 860px !important;
-    max-width: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-
-/* absolute final footer center fix */
-.custom-business-footer,
-footer.custom-business-footer {
+.custom-footer-shell .custom-business-footer {
   width: 860px !important;
   min-width: 860px !important;
   max-width: 860px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin: 0 auto !important;
   display: block !important;
   position: relative !important;
   left: auto !important;
@@ -184,12 +166,14 @@ footer.custom-business-footer {
   text-align: center !important;
 }
 @media (max-width: 900px) {
-  .custom-business-footer,
-  footer.custom-business-footer {
+  .custom-footer-shell {
+    width: 100%;
+    min-width: 1200px;
+  }
+  .custom-footer-shell .custom-business-footer {
     width: 860px !important;
     min-width: 860px !important;
     max-width: 860px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin: 0 auto !important;
   }
 }
