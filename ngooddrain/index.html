@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>24시착한하수구 상담신청 - 네이버용</title>
+<meta name="description" content="하수구·배관 문제 상담신청 안내 페이지입니다.">
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/origin/jquery-1.11.0.min.js.다운로드"></script>
+<script src="./assets/origin/wrest.js.다운로드"></script>
+<script src="./assets/origin/jquery.bpopup.min.js.다운로드"></script>
+<script src="./assets/origin/jquery.bxslider.js.다운로드"></script>
+<script src="./assets/origin/addr.js.다운로드"></script>
+<script src="./assets/origin/slick.min.js.다운로드"></script>
+<script>
+function fnMove(seq){
+  var offset = $("#dbdb" + seq).offset();
+  if(offset) $('html, body').animate({scrollTop : offset.top-120}, 400);
+}
+$(document).ready(function(){
+  if ($.fn.slick) {
+    $('.slick').slick({slidesToShow:1, slidesToScroll:1, arrows:false, dots:false, infinite:true});
+  }
+});
+</script>
+</head>
+<body>
+
+	<div class="wrap">
+
+    <section id="main" style="margin:0 auto; ">
+        <img src="./assets/origin/01_bg.jpg">
+        <img data-aos="fade-up" class="main-alert" src="./assets/origin/01_alert.png" alt="금방 뚫릴 문제도, 늦으면 큰 공사로 번집니다.">
+        <div class="main-title">
+            <img data-aos="fade-up" src="./assets/origin/01_title.gif" alt="착한환경이">
+            <img data-aos="fade-up" src="./assets/origin/01_desc.png" alt="착한가격으로 빠르게 해결하겠습니다.">
+        </div>
+        <div class="main-counter" data-aos="fade-up">
+            <img src="./assets/origin/01_timer.png" alt="평균 출동시간">
+            <span id="counting-m">28</span>
+            <span id="counting-s">33</span>
+        </div>
+        <div class="main-badge">
+            <img data-aos="fade-up" src="./assets/origin/01_badge1.png" alt="투명한 견적안내">
+            <img data-aos="fade-up" src="./assets/origin/01_badge2.png" alt="미해결시 0원">
+            <img data-aos="fade-up" src="./assets/origin/01_badge3.png" alt="시간 예약 가능">
+        </div>
+    </section>
+
+ 
+
+ 		<div class="form1" id="dbdb2">
+			<div class="inner"><h1><span>야간/주말/공휴일도 </span><br> 추가요금 없이 연중무휴 출동</h1>
+				<div class="formArea">
+				<p style="font-size:16px; color:#333; padding:10px 40px 10px 10px; letter-spacing:-1px; text-align:right;"><span class="red">*</span> 필수 입력 항목입니다. </p>
+					<form id="reqFrm" name="reqFrm" method="post" action="./apply/" >
+<table class="form_table">
+							<colgroup>
+								<col width="27%">
+								<col width="73%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><span class="red">*</span> 이름</th>
+									<td><input type="text" name="name" title="이름" class="required hangulalnum input_style" maxlength="4" style="width:40%"></td>
+								</tr>
+								<tr>
+									<th><span class="red">*</span> 연락처</th>
+									<td>
+										<input type="tel" value="010" class="input_style" name="hp1" title="연락처" style="width:28%;" readonly="">
+										-
+										<input type="tel" class="required numeric input_style" name="hp2" title="연락처" maxlength="4" style="width:28%;">
+										-
+										<input type="tel" class="required numeric input_style" name="hp3" title="연락처" maxlength="4" style="width:28%;">
+									</td>
+								</tr>
+								<tr>
+									<th><span class="red">*</span> 주소</th>
+									<td>
+										<select name="item3" class="required sel_style" title="시/도" onchange="reSetAddr(&#39;reqFrm&#39;,this.value,&#39;&#39;,&#39;&#39;);" style="width:45%;"><option value="">시/도</option><option value="서울">서울</option><option value="인천">인천</option><option value="대전">대전</option><option value="대구">대구</option><option value="부산">부산</option><option value="울산">울산</option><option value="광주">광주</option><option value="경기">경기</option><option value="강원">강원</option><option value="충북">충북</option><option value="충남">충남</option><option value="경북">경북</option><option value="경남">경남</option><option value="전북">전북</option><option value="전남">전남</option><option value="제주">제주</option><option value="세종">세종</option></select>
+										<select name="item4" class="required sel_style" title="시/군/구" onchange="reSetAddr(&#39;reqFrm&#39;,reqFrm.item3.value,this.value,&#39;&#39;);" style="width:45%;"><option value="">시/군/구</option></select>
+										<script> reSetAddr("reqFrm","", "", ""); </script>
+										<input type="text" name="item5" title="상세주소" class="hangulalnum input_style" maxlength="30" placeholder="상세주소(필수 입력)" style="width:100%;margin-top:10px; ">
+
+									</td>
+								</tr>
+								<tr>
+									<th><span class="red">*</span> 서비스 선택</th>
+									<td>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="하수구 막힘" checked=""> 하수구 막힘</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="변기 막힘"> 변기 막힘</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="누수탐지 방지, 시공"> 누수탐지 방지, 시공</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="싱크대 막힘"> 싱크대 막힘</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="언 수도 녹임(해빙)"> 언 수도 녹임(해빙)</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="기타" value="기타"> 기타</label>
+										<input type="text" name="item2" title="기타" class="hangulalnum input_style" maxlength="20" placeholder="기타 선택시 입력" style="width:100%">
+
+									</td>
+								</tr>
+								<tr>
+									<th> 방문 요청 시간</th>
+									<td><textarea type="text" name="contents" title="방문 요청 시간" class="textarea_style" style="100%;" placeholder=""></textarea></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="submit_box">
+							<div style="line-height:24px;font-size:16px; padding-top:5px; color:#333;">
+								<input type="checkbox" name="agree1" checked="" title="개인정보 수집이용" style="width:18px; height:18px;">
+									<span> 개인정보 수집이용 동의<a href="../privacy/" style="font-weight:600;color:#333;"> [자세히보기]</a></span>
+							</div>
+							<button type="submit" class="btn01">빠른상담신청</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+
+
+    <section id="services">
+        <img src="./assets/origin/02_bg.jpg">
+        <img data-aos="fade-up" class="service-title" src="./assets/origin/02_title.png" alt="착한환경의 주요 서비스들">
+        <div class="services">
+            <img data-aos="fade-up" src="./assets/origin/02_1.png" alt="변기막힘 해결">
+            <img data-aos="fade-up" src="./assets/origin/02_2.png" alt="하수구막힘 해결">
+            <img data-aos="fade-up" src="./assets/origin/02_3.png" alt="싱크대막힘 해결">
+            <img data-aos="fade-up" src="./assets/origin/02_4.png" alt="누수문제 해결">
+            <img data-aos="fade-up" src="./assets/origin/02_5.png" alt="각종 부품 교체">
+            <img data-aos="fade-up" src="./assets/origin/02_6.png" alt="※ 모든 서비스는 상황에 따라 추가 비용이 발생할 수 있습니다.">
+        </div>
+    </section>
+
+    <section id="alert">
+        <img src="./assets/origin/03_bg.jpg">
+        <img data-aos="zoom-in" class="alert-title" src="./assets/origin/03_title.png" alt="허위 견적 조심하세요">
+        <img data-aos="fade-up" class="alert-notice" src="./assets/origin/03_notice.png" alt="불합리한 업체로 인해 피해가 생기지 않도록 착한환경은 앞으로도 투명한 견적, 정직한 서비스를 최우선으로 하겠습니다.">
+    </section>
+ 
+    <section id="process">
+        <img src="./assets/origin/04_bg.gif">
+        <img data-aos="fade-up" class="process-title" src="./assets/origin/04_title.png" alt="문제 원인부터 해결까지, 착한환경의 체계적인 작업 프로세스">
+    </section>
+
+    <section id="merit">
+        <img src="./assets/origin/05_bg.jpg">
+        <img data-aos="fade-up" class="merit-title" src="./assets/origin/05_title.png" alt="왜 모두가 착한환경을 선택할까요?">
+        <div class="merits">
+            <img data-aos="fade-up" src="./assets/origin/05_1.png" alt="거짓없는 투명한 견적 안내">
+            <img data-aos="fade-up" src="./assets/origin/05_2.png" alt="지역별 기사 30분 내 출동 시스템">
+            <img data-aos="fade-up" src="./assets/origin/05_3.png" alt="분야별 전담기사로 책임시공">
+            <img data-aos="fade-up" src="./assets/origin/05_4.png" alt="광고비보다 최고급 장비에 투자">
+            <img data-aos="fade-up" src="./assets/origin/05_5.png" alt="주기적인 CS 교육으로 고객 만족도 상승">
+            <img data-aos="fade-up" src="./assets/origin/05_6.png" alt="문제 해결 확률 98.8%">
+            <img data-aos="fade-up" src="./assets/origin/05_7.png" alt="대한민국 모든 지역 출장가능(제주도 포함)">
+        </div>
+    </section>
+ 
+
+ 
+
+		<div class="" style="background:url(./assets/origin/06_bg.jpg)no-repeat center; width:860px; background-size:100% auto; margin:0 auto; padding:80px 0; ">
+		<img src="./assets/origin/06_title.png" style="width:100%; ">
+ 			<div class="slider_wrap" style="width:860px; margin:0 auto; text-align:center; "> 
+				<div class="slick slick-initialized slick-slider" style="margin:0 auto; text-align:center; ">
+					<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 9460px; transform: translate3d(-860px, 0px, 0px);"><div class="slidewidth slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_5.png" style="width:100%; "></div><div class="slidewidth slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 860px;"><img src="./assets/origin/review_1.png" style="width:100%; "></div><div class="slidewidth slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_2.png" style="width:100%; "></div><div class="slidewidth slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_3.png" style="width:100%; "></div><div class="slidewidth slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_4.png" style="width:100%; "></div><div class="slidewidth slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_5.png" style="width:100%; "></div><div class="slidewidth slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_1.png" style="width:100%; "></div><div class="slidewidth slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_2.png" style="width:100%; "></div><div class="slidewidth slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_3.png" style="width:100%; "></div><div class="slidewidth slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_4.png" style="width:100%; "></div><div class="slidewidth slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 860px;"><img src="./assets/origin/review_5.png" style="width:100%; "></div></div></div>
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+ 
+
+
+    <section id="outro">
+        <img src="./assets/origin/07_bg.jpg">
+        <img data-aos="fade-up" class="outro-title" src="./assets/origin/07_title.png" alt="고객님의 불편함, 착한환경이 해결해드리겠습니다!">
+    </section>
+
+
+
+
+ 		<div class="form1" id="dbdb1">
+			<div class="inner"><h1><span>야간/주말/공휴일도 </span><br> 추가요금 없이 연중무휴 출동</h1>
+				<div class="formArea">
+				<p style="font-size:16px; color:#333; padding:10px 40px 10px 10px; letter-spacing:-1px; text-align:right;"><span class="red">*</span> 필수 입력 항목입니다. </p>
+					<form id="reqFrm2" name="reqFrm2" method="post" action="./apply/" >
+<table class="form_table">
+							<colgroup>
+								<col width="27%">
+								<col width="73%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><span class="red">*</span> 이름</th>
+									<td><input type="text" name="name" title="이름" class="required hangulalnum input_style" maxlength="4" style="width:40%"></td>
+								</tr>
+								<tr>
+									<th><span class="red">*</span> 연락처</th>
+									<td>
+										<input type="tel" value="010" class="input_style" name="hp1" title="연락처" style="width:28%;" readonly="">
+										-
+										<input type="tel" class="required numeric input_style" name="hp2" title="연락처" maxlength="4" style="width:28%;">
+										-
+										<input type="tel" class="required numeric input_style" name="hp3" title="연락처" maxlength="4" style="width:28%;">
+									</td>
+								</tr>
+								<tr>
+									<th><span class="red">*</span> 주소</th>
+									<td>
+										<select name="item3" class="required sel_style" title="시/도" onchange="reSetAddr(&#39;reqFrm2&#39;,this.value,&#39;&#39;,&#39;&#39;);" style="width:45%;"><option value="">시/도</option><option value="서울">서울</option><option value="인천">인천</option><option value="대전">대전</option><option value="대구">대구</option><option value="부산">부산</option><option value="울산">울산</option><option value="광주">광주</option><option value="경기">경기</option><option value="강원">강원</option><option value="충북">충북</option><option value="충남">충남</option><option value="경북">경북</option><option value="경남">경남</option><option value="전북">전북</option><option value="전남">전남</option><option value="제주">제주</option><option value="세종">세종</option></select>
+										<select name="item4" class="required sel_style" title="시/군/구" onchange="reSetAddr(&#39;reqFrm2&#39;,reqFrm2.item3.value,this.value,&#39;&#39;);" style="width:45%;"><option value="">시/군/구</option></select>
+										<script> reSetAddr("reqFrm2","", "", ""); </script>
+										<input type="text" name="item5" title="상세주소" class="hangulalnum input_style" maxlength="30" placeholder="상세주소(필수 입력)" style="width:100%;margin-top:10px; ">
+
+									</td>
+								</tr>
+								<tr>
+									<th><span class="red">*</span> 서비스 선택</th>
+									<td>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="하수구 막힘" checked=""> 하수구 막힘</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="변기 막힘"> 변기 막힘</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="누수탐지 방지, 시공"> 누수탐지 방지, 시공</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="싱크대 막힘"> 싱크대 막힘</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="서비스 선택" value="언 수도 녹임(해빙)"> 언 수도 녹임(해빙)</label>
+										<label>
+											<input type="radio" name="item1" class="required" title="기타" value="기타"> 기타</label>
+										<input type="text" name="item2" title="기타" class="hangulalnum input_style" maxlength="20" placeholder="기타 선택시 입력" style="width:100%">
+
+									</td>
+								</tr>
+								<tr>
+									<th> 방문 요청 시간</th>
+									<td><textarea type="text" name="contents" title="방문 요청 시간" class="textarea_style" style="100%;" placeholder=""></textarea></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="submit_box">
+							<div style="line-height:24px;font-size:16px; padding-top:5px; color:#333;">
+								<input type="checkbox" name="agree1" checked="" title="개인정보 수집이용" style="width:18px; height:18px;">
+									<span> 개인정보 수집이용 동의<a href="../privacy/" style="font-weight:600;color:#333;"> [자세히보기]</a></span>
+							</div>
+							<button type="submit" class="btn01">빠른상담신청</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+ 
+
+
+<div class="custom-footer-shell">
+<footer class="custom-business-footer">
+  <p><strong>업체명 : 주식회사 허브153</strong></p>
+  <p>대표자 : 최윤재</p>
+  <p>사업자등록번호 : 744-86-01480</p>
+  <p>사업장 주소 : 서울특별시 강남구 도곡로112, 2층B2-4호</p>
+  <p>이메일 : mil7bil@gmail.com</p>
+  <div class="custom-footer-links">
+    <a href="../privacy/">개인정보처리방침</a>
+    <a href="../terms/">이용안내</a>
+  </div>
+</footer>
+</div>
+<div class="bottom-fixed">
+  <a class="btn-main" href="./apply/">상담신청 바로가기</a>
+</div>
+</div>
+</body>
+</html>
