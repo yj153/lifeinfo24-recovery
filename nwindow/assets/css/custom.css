@@ -1,0 +1,88 @@
+
+/* KCC window Naver version final overrides */
+/* Broken saved popup removed; keep original mobile/PC sizing untouched. */
+#kidsten_pop1, .popup.pop1 { display: none !important; }
+
+/* Keep original floating behavior, only normalize saved inline position. */
+#btn_ban {
+  top: 200px;
+}
+
+/* Footer follows original .wrap .contents axis:
+   .wrap .contents { left:50%; margin-left:-960px; width:1920px; }
+   .wrap .contents img { width:970px; } */
+.custom-footer-shell {
+  position: relative !important;
+  top: 0 !important;
+  left: 50% !important;
+  margin-left: -960px !important;
+  width: 1920px !important;
+  min-width: 1920px !important;
+  max-width: 1920px !important;
+  text-align: center !important;
+  background: transparent !important;
+  clear: both !important;
+}
+.custom-footer-shell .custom-business-footer {
+  width: 970px !important;
+  min-width: 970px !important;
+  max-width: 970px !important;
+  margin: 0 auto !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  background: #f4f5f7 !important;
+  color: #4f5560 !important;
+  padding: 20px 20px 54px !important;
+  text-align: center !important;
+  border-top: 1px solid #e1e4e8 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif !important;
+}
+.custom-footer-shell .custom-business-footer p {
+  margin: 5px 0 !important;
+  color: #4f5560 !important;
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.2px !important;
+}
+.custom-footer-shell .custom-business-footer a {
+  color: #2f343a !important;
+  text-decoration: underline !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+.custom-footer-shell .custom-business-footer span {
+  color: #9aa1aa !important;
+  padding: 0 8px !important;
+}
+@media (max-width: 900px) {
+  .custom-footer-shell {
+    position: relative !important;
+    left: 50% !important;
+    margin-left: -960px !important;
+    width: 1920px !important;
+    min-width: 1920px !important;
+    max-width: 1920px !important;
+  }
+  .custom-footer-shell .custom-business-footer {
+    width: 970px !important;
+    min-width: 970px !important;
+    max-width: 970px !important;
+    margin: 0 auto !important;
+    padding: 20px 20px 56px !important;
+  }
+  .custom-footer-shell .custom-business-footer p,
+  .custom-footer-shell .custom-business-footer a {
+    font-size: 15px !important;
+  }
+}
+.doc {
+  max-width: 900px;
+  margin: 38px auto;
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  line-height: 1.75;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+}

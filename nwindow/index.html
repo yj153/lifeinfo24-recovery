@@ -1,41 +1,81 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 
 <title>KCC 60개월 창호구독 - 네이버용</title>
-<meta name="description" content="KCC 60개월 창호구독 상담신청 안내 페이지입니다.">
-<link rel="stylesheet" href="./assets/css/style.css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="robots" content="index,follow">
+<meta name="description" lang="ko" content="KCC 60개월 창호구독">
+<meta name="keywords" lang="ko" content="KCC 60개월 창호구독">
+
+<meta property="og:description" content="KCC 60개월 창호구독">
+<meta property="og:image" content="/intro/kccwindow/img/og.jpg">
+<meta name="google" value="notranslate">
+<link rel="stylesheet" href="./assets/origin/fonts.css">
+<link rel="stylesheet" href="./assets/origin/style.css">
+<link rel="stylesheet" href="./assets/origin/jquery.bxslider.css">
+<link rel="stylesheet" href="./assets/origin/font-awesome.min.css">
+
 <script src="./assets/origin/jquery-1.11.0.min.js.다운로드"></script>
 <script src="./assets/origin/wrest.js.다운로드"></script>
 <script src="./assets/origin/jquery.bpopup.min.js.다운로드"></script>
 <script src="./assets/origin/jquery.bxslider.js.다운로드"></script>
-<script src="./assets/origin/addr.js.다운로드"></script>
-<script src="./assets/origin/slick.min.js.다운로드"></script>
-<script>
-function fnMove(seq){
-  var target = document.getElementById("dbdb" + seq);
-  if (!target) target = document.querySelector(".form1");
-  if (target) {
-    var top = target.getBoundingClientRect().top + window.pageYOffset - 80;
-    window.scrollTo({top: top, behavior: "smooth"});
-  }
-  return false;
+
+<link rel="stylesheet" type="text/css" href="./assets/origin/slick.css">
+<script type="text/javascript" src="./assets/origin/slick.min.js.다운로드"></script>
+
+
+
+<script type="text/javascript">
+var cc=0
+function showHide(id) {
+    if (cc==0) {
+        cc=1
+        document.getElementById(id).style.display="block";
+    } else {
+        cc=0
+        document.getElementById(id).style.display="none";
+    }
 }
-$(function(){
-  $("#btn_ban a, .btn_req").off("click").on("click", function(e){
-    e.preventDefault();
-    fnMove('1');
-  });
-});
 </script>
+
+
+<script>
+$(window).scroll(function(){  
+	$('#btn_ban').animate({top:$(window).scrollTop()+200+"px"},{queue:false, duration:400});    
+}); 
+</script>
+
+<script>
+    function fnMove(seq){
+        var offset = $("#dbdb" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top-0/*스크롤된 위치에서 상단네비 길이만큼 -60*/}, 400/*스크롤시간*/);
+    }
+</script>
+
+
+<style>
+.popup {position:absolute;display:none!important}
+.popup > img { width:100%; }
+.popup .btns {display:flex; background-color:rgba(0,0,0,.7); } 
+.popup .btn {color:#fff; width:50%; text-align:center; cursor:pointer; padding:12px 0; font-size:15px; }
+.popup .btn:first-child { border-right:1px solid #666; }
+
+.pop1 {z-index:9998; top:80px; bottom:0; left:30px; right:0; width:550px; }
+</style>
+
+ 
+<link rel="stylesheet" href="./assets/css/custom.css">
+
 </head>
 <body>
 
 <div class="wrap">
 
 		<div class="scroll_banner btn_ban" id="btn_ban">
-			<a onclick="fnMove('1')"><img src="./assets/origin/pen_icon.png" style="width:70px;padding-bottom:12px;"><br>
+			<a onclick="fnMove(&#39;1&#39;)"><img src="./assets/origin/pen_icon.png" style="width:70px;padding-bottom:12px;"><br>
 			무료상담 신청하기</a>
 			<div class="close" onclick="btn_ban.style.display=&#39;none&#39;;"><i class="fa fa-times"></i></div>
 		</div>
@@ -350,11 +390,11 @@ var setCookie = function( name, value, expirehours ){
 
 
 <div class="custom-footer-shell">
-<footer class="custom-business-footer">
-  <p>업체명 : 주식회사 허브153 | 대표자 : 최윤재 | 사업자등록번호 : 744-86-01480</p>
-  <p>주소 : 서울특별시 강남구 도곡로112, 2층B2-4호 | 이메일 : mil7bil@gmail.com</p>
-  <p><a href="../privacy/">개인정보처리방침</a> <span>|</span> <a href="../terms/">이용안내</a></p>
-</footer>
+  <footer class="custom-business-footer">
+    <p>업체명 : 주식회사 허브153 <span>|</span> 대표자 : 최윤재 <span>|</span> 사업자등록번호 : 744-86-01480</p>
+    <p>주소 : 서울특별시 강남구 도곡로112, 2층B2-4호 <span>|</span> 이메일 : mil7bil@gmail.com</p>
+    <p><a href="../privacy/">개인정보처리방침</a> <span>|</span> <a href="../terms/">이용안내</a></p>
+  </footer>
 </div>
 </div>
 </body>
