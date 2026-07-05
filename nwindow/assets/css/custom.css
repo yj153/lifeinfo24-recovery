@@ -119,3 +119,40 @@ html, body {
     font-size: 15px !important;
   }
 }
+
+
+/* mobile bottom fixed consultation button only */
+.mobile-fixed-consult {
+  display: none;
+}
+@media (max-width: 970px) {
+  .mobile-fixed-consult {
+    display: block !important;
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 9999 !important;
+    background: rgba(255,255,255,0.96) !important;
+    padding: 10px 18px calc(10px + env(safe-area-inset-bottom)) !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    border-top: 1px solid #e5e7eb !important;
+  }
+  .mobile-fixed-consult a {
+    display: block !important;
+    width: 86% !important;
+    max-width: 620px !important;
+    height: 54px !important;
+    line-height: 54px !important;
+    margin: 0 auto !important;
+    background: #1f5fff !important;
+    color: #fff !important;
+    border-radius: 999px !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5px !important;
+    text-decoration: none !important;
+    box-shadow: 0 8px 22px rgba(31,95,255,0.22) !important;
+  }
+}

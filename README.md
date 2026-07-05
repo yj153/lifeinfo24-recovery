@@ -19,3 +19,5 @@ https://www.albarich.com/pt/wVfRT8GAFk
 - footer 모바일 글씨 15px 적용
 
 - 모바일 viewport를 원본 표시폭 970px 기준으로 최종 보정
+
+- 모바일 하단 고정 무료상담 신청하기 버튼 추가
