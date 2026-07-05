@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<title>KCC 60개월 창호구독 - 네이버용</title>
+<meta name="description" content="KCC 60개월 창호구독 상담신청 안내 페이지입니다.">
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/origin/jquery-1.11.0.min.js.다운로드"></script>
+<script src="./assets/origin/wrest.js.다운로드"></script>
+<script src="./assets/origin/jquery.bpopup.min.js.다운로드"></script>
+<script src="./assets/origin/jquery.bxslider.js.다운로드"></script>
+<script src="./assets/origin/addr.js.다운로드"></script>
+<script src="./assets/origin/slick.min.js.다운로드"></script>
+<script>
+function fnMove(seq){
+  var target = document.getElementById("dbdb" + seq);
+  if (!target) target = document.querySelector(".form1");
+  if (target) {
+    var top = target.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({top: top, behavior: "smooth"});
+  }
+  return false;
+}
+$(function(){
+  $("#btn_ban a, .btn_req").off("click").on("click", function(e){
+    e.preventDefault();
+    fnMove('1');
+  });
+});
+</script>
+</head>
+<body>
+
+<div class="wrap">
+
+		<div class="scroll_banner btn_ban" id="btn_ban">
+			<a onclick="fnMove('1')"><img src="./assets/origin/pen_icon.png" style="width:70px;padding-bottom:12px;"><br>
+			무료상담 신청하기</a>
+			<div class="close" onclick="btn_ban.style.display=&#39;none&#39;;"><i class="fa fa-times"></i></div>
+		</div>
+<div class="contents"><img src="./assets/origin/01.png"></div> 
+		<div class="contents"><img src="./assets/origin/02.png"></div> 
+		<div class="contents"><img src="./assets/origin/03.png"></div> 
+		<div class="contents"><img src="./assets/origin/04.png"> </div>
+		<div class="contents"><img src="./assets/origin/05.jpg"></div> 
+		<div class="contents"><img src="./assets/origin/06.png"></div> 
+		<div class="contents"><img src="./assets/origin/07.jpg"> </div>
+		<div class="contents"><img src="./assets/origin/08.jpg"></div> 
+		<div class="contents"><img src="./assets/origin/09.png"></div> 
+		<div class="contents"><img src="./assets/origin/10.jpg"> </div>
+		<div class="contents"><img src="./assets/origin/11.jpg"></div> 
+		<div class="contents"><img src="./assets/origin/12.png"></div> 
+		<div class="contents"><img src="./assets/origin/13.png"></div> 
+		<div class="contents"><img src="./assets/origin/14.jpg"> </div>
+		<div class="contents"><img src="./assets/origin/15.jpg"></div> 
+ 
+ 		<div class="form1" id="dbdb1" style="width:970px; margin:0 auto;background-color:#e9effe;padding:60px 0;text-align:center;">
+			<h2 style="background-color:#fff; font-size:26px; border-radius:50px; color: rgb(39, 89, 229); line-height:160%; font-weight:500;display:inline-block; padding:5px 30px;margin-bottom:10px;  ">오직 이 광고에서만 드리는 혜택!</h2>
+			<p style=" font-size:24px; line-height:160%; margin-bottom:20px;  ">
+			 지금 바로 무료 상담 신청하시고<br>
+			<span style="color:#fff;  background-color: rgb(39, 89, 229);">60개월 구독과 LG가전 까지</span> 받아 가세요!</p>
+			<div class="inner" style="background-color:#fff;">
+				<div class="formArea">
+				<p style="font-size:16px; color:#333; padding:10px 40px 10px 10px; letter-spacing:-1px; text-align:right;"><span class="red">*</span> 필수 입력 항목입니다. </p>
+					<form id="reqFrm2" name="reqFrm2" method="post" action="https://www.albarich.com/pt/wVfRT8GAFk" onsubmit="window.location.href=\'https://www.albarich.com/pt/wVfRT8GAFk\'; return false;">
+						<table class="form_table">
+							<colgroup>
+								<col width="27%">
+								<col width="73%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><span class="red">*</span> 이름</th>
+									<td><input type="text" name="name" title="이름" class="required hangulalnum input_style" maxlength="4" style="width:40%"></td>
+								</tr>
+								<tr>
+									<th><span class="red">*</span> 연락처</th>
+									<td>
+										<input type="tel" value="010" class="input_style" name="hp1" title="연락처" style="width:28%;" readonly="">
+										-
+										<input type="tel" class="required numeric input_style" name="hp2" title="연락처" maxlength="4" style="width:28%;">
+										-
+										<input type="tel" class="required numeric input_style" name="hp3" title="연락처" maxlength="4" style="width:28%;">
+									</td>
+								</tr>
+								<tr>
+									<th><span class="red">*</span> 주소</th>
+									<td>
+										<input type="text" name="item1" id="s_addr1" onclick="sample2_execDaumPostcode(&#39;start&#39;)" title="주소" placeholder="출발지주소를 입력해 주세요." class="required input_style" maxlength="60" style="width:100%" readonly="">
+										<input type="text" name="item2" id="s_addr2" title="상세주소" placeholder="상세주소를 입력해 주세요." class="required input_style" maxlength="60" style="width:100%; margin-top:1%;">
+										<input type="hidden" name="item4" id="s_zipcode" title="우편번호" class="required">
+										<p style="color:#ee0000">※제주지역 신청불가</p>
+									</td>
+								</tr>
+								<tr>
+									<th>집평수</th>
+									<td><input type="text" name="item3" title="집평수" class="hangulalnum input_style" maxlength="4" placeholder="예)34평/확장or비확장" style="width:100%"></td>
+								</tr>
+								<tr>
+									<th>시공 영역</th>
+									<td><input type="text" name="item4" title="시공 영역" class="hangulalnum input_style" maxlength="4" placeholder="예)전체or기타" style="width:100%"></td>
+								</tr>
+								<tr>
+									<th>현재 상황</th>
+									<td>
+									<select name="item5" class="sel_style" style=" width:60%;" title="현재 상황">
+										<option value="현재 공실">현재 공실</option>
+										<option value="시공 시 공실 예정">시공 시 공실 예정</option>
+										<option value="사용/거주중">사용/거주중</option>
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<th>시공 희망일</th>
+									<td>
+									<select name="item6" class="sel_style" style=" width:60%;" title="시공 희망일">
+										<option value="1달 이내">1달 이내</option>
+										<option value="1달~2달 이내">1달~2달 이내</option>
+										<option value="2달~3달 이내">2달~3달 이내</option>
+										<option value="3달 이후">3달 이후</option>
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<th>시공 예산</th>
+									<td>
+									<select name="item7" class="sel_style" style=" width:60%;" title="시공 예산">
+										<option value="300만원 이하">300만원 이하</option>
+										<option value="300만원~500만원">300만원~500만원</option>
+										<option value="500만원~700만원">500만원~700만원</option>
+										<option value="700만원~900만원">700만원~900만원</option>
+										<option value="900만원~1,200만원">900만원~1,200만원</option>
+										<option value="1,200만원~1,500만원">1,200만원~1,500만원</option>
+										<option value="1,500만원~2,000만원">1,500만원~2,000만원</option>
+										<option value="2,000만원 이상">2,000만원 이상</option>
+									</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="submit_box">
+							<div style="line-height:24px;font-size:16px; padding-top:5px; color:#333;">
+								<input type="checkbox" name="agree1" checked="" title="개인정보 수집이용" style="width:18px; height:18px;">
+									<span> 개인정보 수집이용 동의<a href="../privacy/" style="font-weight:600;color:#333;"> [자세히보기]</a></span>
+							</div>
+							<button type="submit" class="btn01 foot_btn">무료상담신청</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="contents"><img src="./assets/origin/16.jpg"></div> 
+		<div class="contents"><img src="./assets/origin/17.jpg"> </div>
+		<div class="contents"><img src="./assets/origin/18.jpg"></div><script>
+/* 레이어팝업 */
+var BPOPUP='';
+		(function($) {
+				$(function() {
+						$('.popup1').bind('click', function(e) {
+								e.preventDefault();
+								BPOPUP =  $('#term1').bPopup({
+										modalClose : true
+								});
+						});  
+				});
+		})(jQuery);
+</script>
+
+
+
+
+	</div>
+
+	<script src="./assets/origin/tracking.js.다운로드"></script>
+
+<div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
+<img src="./assets/origin/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
+</div>
+
+<script src="./assets/origin/postcode.v2.js.다운로드"></script>
+<script>
+    // 우편번호 찾기 화면을 넣을 element
+    var element_layer = document.getElementById('layer');
+
+    function closeDaumPostcode() {
+        // iframe을 넣은 element를 안보이게 한다.
+        element_layer.style.display = 'none';
+    }
+
+    function sample2_execDaumPostcode(flag) {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    //document.getElementById("sample2_extraAddress").value = extraAddr;
+                
+                } else {
+                    //document.getElementById("sample2_extraAddress").value = '';
+                }
+
+				// 우편번호와 주소 정보를 해당 필드에 넣는다.
+				if (flag == 'start') {
+					document.getElementById("s_zipcode").value = data.zonecode;
+					document.getElementById("s_addr1").value = addr;
+					document.getElementById("s_addr2").focus();
+				} else {
+					document.getElementById("e_zipcode").value = data.zonecode;
+					document.getElementById("e_addr1").value = addr;
+					document.getElementById("e_addr2").focus();
+				}
+                // iframe을 넣은 element를 안보이게 한다.
+                // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                element_layer.style.display = 'none';
+            },
+            width : '100%',
+            height : '100%',
+            maxSuggestItems : 5
+        }).embed(element_layer);
+
+        // iframe을 넣은 element를 보이게 한다.
+        element_layer.style.display = 'block';
+
+        // iframe을 넣은 element의 위치를 화면의 가운데로 이동시킨다.
+        initLayerPosition();
+    }
+
+    // 브라우저의 크기 변경에 따라 레이어를 가운데로 이동시키고자 하실때에는
+    // resize이벤트나, orientationchange이벤트를 이용하여 값이 변경될때마다 아래 함수를 실행 시켜 주시거나,
+    // 직접 element_layer의 top,left값을 수정해 주시면 됩니다.
+    function initLayerPosition(){
+        var width = 500; //우편번호서비스가 들어갈 element의 width
+        var height = 500; //우편번호서비스가 들어갈 element의 height
+        var borderWidth = 5; //샘플에서 사용하는 border의 두께
+
+        // 위에서 선언한 값들을 실제 element에 넣는다.
+        element_layer.style.width = width + 'px';
+        element_layer.style.height = height + 'px';
+        element_layer.style.border = borderWidth + 'px solid';
+        // 실행되는 순간의 화면 너비와 높이 값을 가져와서 중앙에 뜰 수 있도록 위치를 계산한다.
+        element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width)/2 - borderWidth) + 'px';
+        element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height)/2 - borderWidth) + 'px';
+    }
+</script>
+<!--팝업-->
+<script>
+$(function() {
+	$('.popup').each(function() {
+		var id = $(this).attr('id');
+
+		if(getCookie(id) == "done"){
+			$('#'+id).hide();
+		} else {
+			$('#'+id).show();
+		}
+		
+	});
+
+	$('.btn-close-today').click(function() {
+		var id = $(this).parent().parent().attr('id');
+		$('#'+id).hide();
+		setCookie(id, "done", 24);
+
+	});
+
+	$('.btn-close').click(function() {
+			var id = $(this).parent().parent().attr('id');
+			$('#'+id).hide();
+	});
+});
+</script>
+
+  <script>
+$(function(){ 
+	//-- 팝업1
+	if (getCookie("kidsten") == "done"){
+		$("#divLayer").hide();
+	} else {
+		$("#divLayer").show();
+	}
+
+}); 
+
+var _lyrcls = function( e, num ){
+	e.preventDefault();
+
+	if ( $("#inpCls"+num).prop("checked")) {
+		setCookie("kidsten"+num, "done", 24);
+	} 
+	$("#divLayer"+num).hide();
+
+}
+
+var getCookie = function( name ) {
+	var nameOfCookie = name + "=";
+	var x = 0;
+	while ( x <= document.cookie.length )
+	{
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) 
+		{
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 ) break;
+	}
+	return "";
+}
+
+var setCookie = function( name, value, expirehours ){
+	var todayDate = new Date(); 
+	todayDate.setHours( todayDate.getHours() + expirehours ); 
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+}
+</script>
+<!--//팝업-->
+
+ 
+
+
+<div class="custom-footer-shell">
+<footer class="custom-business-footer">
+  <p>업체명 : 주식회사 허브153 | 대표자 : 최윤재 | 사업자등록번호 : 744-86-01480</p>
+  <p>주소 : 서울특별시 강남구 도곡로112, 2층B2-4호 | 이메일 : mil7bil@gmail.com</p>
+  <p><a href="../privacy/">개인정보처리방침</a> <span>|</span> <a href="../terms/">이용안내</a></p>
+</footer>
+</div>
+</div>
+</body>
+</html>
