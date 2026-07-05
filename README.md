@@ -19,3 +19,5 @@ https://lifeinfo24.kr/kgooddrain/
 - 기존 잘못된 사업자정보 이미지 참조 제거
 - 기존 사업자번호/광고전화 문구 제거
 - Csr2O9VrQz 신청 iframe 유지
+
+- 사업자정보 footer 중앙정렬 보정

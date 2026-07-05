@@ -142,3 +142,26 @@ body {
     font-size: 17px;
   }
 }
+
+
+/* final footer alignment: match original 860px centered landing frame */
+.custom-business-footer {
+  width: 860px !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+.custom-business-footer * {
+  box-sizing: border-box !important;
+}
+@media(max-width:900px) {
+  .custom-business-footer {
+    width: 860px !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
