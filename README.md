@@ -1,21 +1,25 @@
-# 뚫뚫배관 HytZAyEMYg 네이버용 GitHub 전체 업로드용
+# 온리원네이버 랜딩
 
-업로드 후 주소:
-https://lifeinfo24.kr/nddulddul/
+GitHub 저장소 루트에 아래 파일/폴더를 그대로 업로드하세요.
 
-신청폼:
-https://www.albarich.com/intro/_frm/index.php?code=HytZAyEMYg
+- README.md
+- index.html
+- nonlyone/
+- privacy/
+- terms/
 
-구성:
-- index.html : 루트 접속 시 /nddulddul/ 이동
-- nddulddul/ : 네이버용 메인 랜딩
-- nddulddul/apply/ : 실제 상담신청 iframe
-- privacy/ : 개인정보처리방침
-- terms/ : 이용안내
+최종 주소:
 
-반영:
-- 성공본과 동일한 PC/모바일 구조 유지
-- 모바일 원본형 보정 유지
-- 코드 HytZAyEMYg 적용
-- /apply/에 HytZAyEMYg 실제 iframe 삽입
-- 네이버용 하단 허브153 사업자정보 적용
+- https://lifeinfo24.kr/nonlyone/
+- 루트 접속 시 `./nonlyone/`로 자동 이동
+
+반영 내용:
+
+- 온리원 네이버용 폴더명: `nonlyone`
+- 신청폼: Potly iframe 적용
+- 하단 사업자정보: 주식회사 허브153 / 최윤재 / 744-86-01480
+- 사업장 주소: 서울특별시 강남구 도곡로112, 2층B2-4호
+- 이메일: mil7bil@gmail.com
+- 개인정보처리방침 및 이용안내 페이지 포함
+- 기존 비상교육 하단 사업자정보 제거
+- 원본 이미지/CSS/JS 자산은 `nonlyone/assets/origin/`에 보존

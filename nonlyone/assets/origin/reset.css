@@ -1,0 +1,35 @@
+@charset "euc-kr";
+
+*{box-sizing:border-box;}
+
+html{-webkit-touch-callout:none; -webkit-user-select:none; min-height:100%; height:100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background:#fff;}
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, button, select, input, textarea, th, td {margin:0; padding:0;}
+
+body {height:100%; font-family:'Noto Sans KR', 'MalgunGothic', '¸¼Àº°íµñ', '¸¼Àº °íµñ', sans-serif; font-weight:400; font-size:14px; color:#333; -webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; -ms-text-size-adjust:100%; letter-spacing:-1px; line-height:1.5;}
+
+img {border:none; vertical-align:top;}
+
+/* ul li , ol li {list-style:none;} */
+li {list-style:none;}
+
+fieldset {border:none;}
+
+table {border-collapse:collapse;}
+caption {overflow:hidden; width:0; height:0; font-size:0; line-height:0;}
+
+img, fieldset, button { border:0; padding:0px;}
+button {background:none;}
+input, select {vertical-align:middle;}
+input, textarea{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input[type="submit"],input[type="button"]{-webkit-appearance:none;}
+input:hover{outline:none; outline:0;}
+legend {width:0; height:0; font-size:0; position:absolute; overflow:hidden;} 
+em{font-style:inherit;}
+
+a {color:#333; text-decoration:none; cursor:pointer;}
+/* a:link {color:#333;}
+a:visited {color:#333;}
+a:active {color:#333;}
+a:hover {color:#000;} */
+
