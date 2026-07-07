@@ -20,3 +20,6 @@ https://www.albarich.com/intro/_frm/index.php?code=I6hZzJrAaz
 - 메인 form action은 /apply/로 연결
 - /apply/에 I6hZzJrAaz 실제 iframe 삽입
 - 기존 하단 사업자정보 제거
+
+- 모바일만 원본 m_wrap 방식처럼 100%/max-width 720px로 보정
+- PC 레이아웃은 변경 없음

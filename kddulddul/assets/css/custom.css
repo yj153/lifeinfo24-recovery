@@ -84,3 +84,190 @@
     font-size: 14px !important;
   }
 }
+
+
+/* FINAL mobile correction for ddulddul:
+   PC stays as original .wrap.
+   Mobile uses original .m_wrap behavior: 100% width, max-width 720px, centered, images full width. */
+@media (max-width: 720px) {
+  html, body {
+    width: 100% !important;
+    min-width: 320px !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .wrap {
+    width: 100% !important;
+    max-width: 720px !important;
+    min-width: 320px !important;
+    overflow: hidden !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+  .wrap .contents {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    max-width: 720px !important;
+    text-align: center !important;
+  }
+
+  .wrap .contents img {
+    width: 100% !important;
+    max-width: 720px !important;
+    height: auto !important;
+  }
+
+  .wrap .form1 {
+    width: 100% !important;
+    max-width: 720px !important;
+    min-width: 320px !important;
+    margin: 0 auto !important;
+    background-color: #fff !important;
+  }
+
+  .wrap .form1 .inner {
+    width: auto !important;
+    padding: 40px 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .wrap .form1 .inner h1 {
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    line-height: 120% !important;
+    letter-spacing: -2px !important;
+    color: #000 !important;
+  }
+
+  .wrap .form1 .formArea {
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    padding: 10px !important;
+  }
+
+  .wrap .form1 .form_table {
+    width: 100% !important;
+    padding: 0 !important;
+    border-collapse: collapse !important;
+    border-top: 1px solid #d7d7d7 !important;
+  }
+
+  .wrap .form1 .form_table tbody th {
+    padding: 6px 5px !important;
+    vertical-align: middle !important;
+    text-align: right !important;
+    line-height: 24px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    letter-spacing: -2px !important;
+  }
+
+  .wrap .form1 .form_table tbody td {
+    padding: 6px 5px !important;
+    vertical-align: middle !important;
+    text-align: left !important;
+    line-height: 24px !important;
+    font-size: 14px !important;
+  }
+
+  .wrap .form1 .input_style {
+    padding-left: 5px !important;
+    height: 36px !important;
+    border: 1px solid #ccc !important;
+    font-size: 14px !important;
+  }
+
+  .wrap .form1 .sel_style {
+    width: 100% !important;
+    height: 36px !important;
+    border: 1px solid #ccc !important;
+    font-size: 14px !important;
+    vertical-align: middle !important;
+    background-color: #fff !important;
+  }
+
+  .wrap .form1 .textarea_style {
+    width: 100% !important;
+    padding: 6px !important;
+    height: 60px !important;
+    border: 1px solid #ccc !important;
+    font-size: 14px !important;
+    resize: none !important;
+  }
+
+  .wrap .form1 .submit_box {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .wrap .form1 .submit_box .btn01,
+  .wrap .form1 .submit_box button {
+    width: 90% !important;
+    max-width: 500px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    letter-spacing: -2px !important;
+    cursor: pointer !important;
+    color: #fff !important;
+    margin-top: 10px !important;
+    background-color: #1046a3 !important;
+    padding: 12px 0 !important;
+    border-radius: 10px !important;
+  }
+
+  .scroll_banner,
+  .btn_ban,
+  #btn_ban {
+    display: none !important;
+  }
+
+  .custom-footer-shell {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    min-width: 320px !important;
+    max-width: 720px !important;
+    text-align: center !important;
+    background: transparent !important;
+    clear: both !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .custom-footer-shell .custom-business-footer {
+    width: 100% !important;
+    min-width: 320px !important;
+    max-width: 720px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    background: #f4f5f7 !important;
+    color: #4f5560 !important;
+    padding: 18px 12px 54px !important;
+    text-align: center !important;
+    border-top: 1px solid #e1e4e8 !important;
+  }
+
+  .custom-footer-shell .custom-business-footer p {
+    margin: 5px 0 !important;
+    color: #4f5560 !important;
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.2px !important;
+  }
+
+  .custom-footer-shell .custom-business-footer a {
+    color: #2f343a !important;
+    text-decoration: underline !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+  }
+}
